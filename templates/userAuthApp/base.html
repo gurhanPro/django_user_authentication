@@ -14,10 +14,14 @@
             <ul class="nav navbar-nav">
               <li><a class="navbar-brand" href="{% url 'index'%}">HOME</a></li>
               <li><a class="navbar-link" href="{% url 'admin:index'%}">ADMIN</a></li>
-              <li><a class="navbar-link" href="{% url 'userAuthApp:register' %}">USERS</a></li>
-            
+              <li><a class="navbar-link" href="{% url 'userAuthApp:register' %}">Register</a></li>
 
-
+              {% if user.is_authenticated %}
+                <li><a class="navbar-link" href="{% url 'logout' %}">Logout</a></li>
+              {% else %}
+                <li><a class="navbar-link" href="{% url 'userAuthApp:user_login' %}">Login</a></li>
+              {% endif %}
+              <li><a class="navbar-brand" href="{% url 'special'%}">special</a></li>
             </ul>
           </div>
 

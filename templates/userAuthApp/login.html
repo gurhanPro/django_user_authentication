@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends "userAuthApp/base.html" %}
+{% block body_block %}
+
+    <div class="jumbotron">
+
+    <h2 style="font-weight:bold;color:orange;">Login here</h2>
+    <form  action="{% url 'userAuthApp:user_login' %}"method="POST">
+      {{form.as_p}}
+      <!-- secure the form input when submited -->
+      {% csrf_token %}
+      <label for="username">Username:</label>
+      <input type="text" name="username" placeholder="Enter Username">
+
+      <label for="password">Password</label>
+      <input type="password" name="password" >
+
+      <input type="submit" class="btn btn-primary" value="Login">
+    </form>
+
+  </div>
+  {% endblock %}
