@@ -13,8 +13,8 @@ This is a pluggable django User Authentication app with bootstrap 4 as a front-e
 
 ### Registration Page
 
-![Login ](https://i.ibb.co/Wfsss76/abdalla.png)
+![Registration ](https://raw.githubusercontent.com/gurhanPro/django_user_authentication/master/media/profile_pics/registration.jpg)
 
 ### Log In Page
 
-![Login ](https://i.ibb.co/Wfsss76/abdalla.png)
+![Login ](https://raw.githubusercontent.com/gurhanPro/django_user_authentication/master/media/profile_pics/Login.jpg)
